@@ -1,8 +1,10 @@
-from encrypt import init_encrypt, alphabet, number
+from encrypt.encrypt import init_encrypt, alphabet, number, letter_shift, number_shift
+
 
 text = "Hello, World! 123"
 encrypted_text, letter_shift, number_shift = init_encrypt(text)
-def decrypt(encrypted_text, letter_shift, number_shift):
+
+def init_decrypt(encrypted_text, letter_shift=letter_shift, number_shift=number_shift):
     decrypted_text = ""
     for char in encrypted_text:
         if char in alphabet:

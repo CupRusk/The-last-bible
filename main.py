@@ -7,7 +7,7 @@ os.system("cls" if os.name == "nt" else "clear")
 
 def main():
     while True:
-        print(" Механики, которые я сделал:")
+        print("Механики, которые я сделал:")
         print("1.  Консоль управления реакторами")
         print("2.  Окно")
         print("3.  Консоль шифрования")

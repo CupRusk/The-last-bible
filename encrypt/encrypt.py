@@ -1,15 +1,16 @@
 import random
+# -- 
+alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+number = "0123456789"
+# -- 
+letter_shift = random.randint(1, 5)
+number_shift = random.randint(1, 5)
 
 def init_encrypt(text):
-    alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    number = "0123456789"
 
     if len(text) == 0:
         print("Text is empty")
         return False
-
-    letter_shift = random.randint(1, 5)
-    number_shift = random.randint(1, 5)
 
     encrypted_text = ""
     for char in text:
